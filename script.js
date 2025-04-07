@@ -298,7 +298,7 @@ function submitScore() {
     };
     
     // Submit score using fetch API
-    fetch('http://localhost:8000/submit_score.php', {
+    fetch('submit_score.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
