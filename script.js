@@ -298,7 +298,7 @@ function submitScore() {
     };
     
     // Submit score using fetch API
-    fetch('submit_score.php', {
+    fetch('https://quiz-challenge.wuaze.com/submit_score.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -329,7 +329,7 @@ function showLeaderboard() {
     leaderboardContainer.innerHTML = '<div class="loader"></div>';
     
     // Fetch leaderboard data
-    fetch('leaderboard.php')
+    fetch('https://quiz-challenge.wuaze.com/leaderboard.php')
         .then(response => response.json())
         .then(data => {
             if (data.success) {
